@@ -1,0 +1,13 @@
+name: GSA EDX Lighthouse report
+
+on: [pull_request]
+
+permissions:
+  pull-requests: write
+
+jobs:
+  lighthouse:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: GSA/EDX-github-action@v1
