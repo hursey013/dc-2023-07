@@ -1,0 +1,12 @@
+{
+  "ci": {
+    "collect": {
+      "settings": {
+        "plugins": ["lighthouse-plugin-edx"],
+        "onlyCategories": ["lighthouse-plugin-edx"]
+      },
+      "startServerCommand": "npx @11ty/eleventy --serve",
+      "url": ["http://localhost:8080"]
+    }
+  }
+}
